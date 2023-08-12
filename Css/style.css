@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@200;400&family=Raleway:ital,wght@0,200;1,600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@200;400&family=Raleway:ital,wght@0,200;1,600&display=swap'); */
 
 /* font-family: 'Borel', cursive;
 font-family: 'Poppins', sans-serif;
@@ -7,4 +7,65 @@ font-family: 'Raleway', sans-serif; */
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+    /* font-family: 'Baloo Bhai 2', cursive !important; */
+}
+
+.nav-link {
+    color: white !important;
+    padding: 15px;
+    border: 2px transparent solid;
+
+}
+
+.nav-link:hover {
+    /* background-color: white; */
+    /* color: black !important; */
+    border-bottom: solid 2px white;
+    /* font-size: 25px !important; */
+    /* border-radius: 10px; */
+}
+
+
+#navbarSupportedContent {
+    font-size: 18px !important;
+
+}
+
+.dropdown-menu a.dropdown-item:hover {
+    color: white;
+    background-color: rgba(11, 77, 153, 0.913);
+}
+
+.footer_custom {
+    background-color: rgba(11, 77, 153, 0.913);
+    color: white;
+    /* font-family: Georgia; */
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.footer_links {
+    text-decoration: none;
+    color: white;
+    /* font-family: Georgia; */
+}
+
+.h2_custom {
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: rgba(6, 46, 91, 0.913) !important;
+
+}
+
+.para_custom {
+    font-size: 23px;
+    color: rgb(15, 111, 112) !important;
+}
+
+@media screen and (max-width:760px) {
+
+    .quick_links {
+        align-items: center;
+    }
 }

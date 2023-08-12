@@ -1,0 +1,3 @@
+icon for footer
+
+media query in headder 
