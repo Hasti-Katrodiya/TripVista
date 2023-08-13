@@ -1,20 +1,28 @@
 <?php include('./Includes/header.html');  ?>
 <?php  include('./Configuration/DataConnection.php'); ?>
-<!-- Content -->
-<!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+<!-- carousel starts-->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner carousel_custom">
     <div class="carousel-item active">
-      <img src="./Images/1.jpg" class="d-block w-100 img-fluid" height="" alt="slide1">
+      <img src="./Images/slide1.jpg" class="d-block w-100" height="500px" alt="slide1">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <p class="caption_p">Explore Cultural Richness</p>
+        <p class="caption_detail">Immerse yourself in the diversity of cultures, traditions, and histories that shape our world</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./Images/2.jpg" class="d-block w-100" alt="slide2">
+      <img src="./Images/slide2.jpg" class="d-block w-100" alt="slide2" height="500px">
+      <div class="carousel-caption d-none d-md-block">
+        <p class="caption_p">Embrace Adventure</p>
+        <p class="caption_detail">Challenge your limits, seek thrills, and create stories that will be told for generations.</p>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="./Images/3.jpg" class="d-block w-100" alt="slide3">
+      <img src="./Images/slide3.jpg" class="d-block w-100" alt="slide3" height="500px">
+      <div class="carousel-caption d-none d-md-block">
+        <p class="caption_p">Culinary Adventures Await</p>
+        <p class="caption_detail">Savor the world's flavors as you embark on a gastronomic journey,diverse cuisines and culinary delights.</p>
+      </div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -26,21 +34,42 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<br><br><br><br> -->
+<!-- carousel End!!-->
+
 <br>
-<h2 class="container-fluid text-center h2_custom">There is a Big world to Explore</h2>
-<hr>
-<div class="container-fluid row">
-    <div class="col-lg-6 col-md-12 col-sm-12 container-fluid">
-        <img class="container-fluid" src="./Images/1.jpg" alt="">
+<br>
+<h2 class="text-center h2_custom py-2">Explore Unique Cultures and Landscapes</h2>
+<br>
+
+<div class="container-fluid row my-3 ">
+    <div class="col-lg-6 col-md-12">
+        <p class="para_custom container-fluid">Our Tours offer an opportunity to immerse yourself in the vibrant cultures and breathtaking landscapes of destinations around the world. From the bustling markets of Marrakech to the serene temples of Kyoto, each tour is crafted to showcase the essence of the region, allowing you to connect with locals, savor authentic cuisine, and witness awe-inspiring natural wonders.</p>
     </div>
-    <div class="col-lg-6 col-md-12 col-sm-12 container-fluid">
-        <p class="container-fluid para_custom">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet blanditiis iure, unde eius dolore vitae ad reiciendis, excepturi totam deleniti architecto optio ea fugiat exercitationem delectus quas dolores maiores facere voluptate! Minima rem, sequi culpa nisi nemo quo quibusdam quidem velit amet quod id ibero. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic voluptas tempore numquam, aperiam asperiores deserunt quam sint id cumque vel?</p>
+    <div class="col-lg-6 col-md-12">
+        <img class="img-fluid container-fluid" src="./Images/1.jpg" alt="">
+    </div>
+</div>
+
+<!-- Banner Section Start -->
+<div class="row container-fluid">
+  <!-- <hr> -->
+  <img src="./Images/banner.jpg" alt="banner">
+</div>
+<!-- Banner Section End!! -->
+
+<br>
+<h2 class="text-center h2_custom py-2">Roaming the Globe: Adventures Await</h2>
+<div class="container-fluid row my-3 ">
+    <div class="col-lg-6 col-md-12">
+        <img class="img-fluid container-fluid" src="./Images/1.jpg" alt="">
+    </div>
+    <div class="col-lg-6 col-md-12">
+        <p class="para_custom container-fluid">One of the most rewarding aspects of our travel tours is the opportunity to connect with fellow travelers who share your sense of adventure. Forge new friendships, share stories, and create bonds that often last long after the journey ends.</p>
+        <p class="para_custom container-fluid">Engage with local communities and learn about their customs and way of life. Our tours prioritize meaningful interactions and create memories that last a lifetime.</p>
     </div>
 </div>
 <br>
-<hr>
-<div class="row">
+<div class="row container-fluid">
   <?php
 
     $sql = "SELECT * FROM `country`";
@@ -50,16 +79,11 @@
       while ($row = mysqli_fetch_array($result)) {
 ?>
 <div class="col-lg-2 col-md-4 col-sm-6 container-fluid country_container my-4">
-  <a href="./country_detail.php?id=<?php echo $row['Country_id'];?>">
-  <img src="<?php echo $row['Country_img']; ?>" alt="img"   class="country_imgs " >
-  </a>
-      
-      <!-- <h4 class="text-center">
-        <?php
-        //  echo $row['Country_Name'];  
-         ?>
-    </h4> -->
-
+    <a href="./country_detail.php?id=<?php 
+     echo $row['Country_id'];?>">
+   <img src="<?php 
+    echo $row['Country_img']; ?>" alt="img"   class="country_imgs " >
+    </a>
 </div>
 <?php
       }
@@ -67,10 +91,12 @@
 
   ?>
   
-  <hr>
+  <!-- <hr> -->
 
 </div>
-<?php include('./Includes/footer.html');  ?>
+<?php 
+include('./Includes/footer.html');
+  ?>
 
 </body>
 </html>
