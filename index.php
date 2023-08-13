@@ -1,5 +1,5 @@
 <?php include('./Includes/header.html');  ?>
-
+<?php  include('./Configuration/DataConnection.php'); ?>
 <!-- Content -->
 <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner carousel_custom">
@@ -39,6 +39,37 @@
     </div>
 </div>
 <br>
+<hr>
+<div class="row">
+  <?php
+
+    $sql = "SELECT * FROM `country`";
+    $result = mysqli_query($connection,$sql);
+
+    if (mysqli_num_rows($result) > 0) {
+      while ($row = mysqli_fetch_array($result)) {
+?>
+<div class="col-lg-2 col-md-4 col-sm-6 container-fluid country_container my-4">
+  <a href="./country_detail.php?id=<?php echo $row['Country_id'];?>">
+  <img src="<?php echo $row['Country_img']; ?>" alt="img"   class="country_imgs " >
+  </a>
+      
+      <!-- <h4 class="text-center">
+        <?php
+        //  echo $row['Country_Name'];  
+         ?>
+    </h4> -->
+
+</div>
+<?php
+      }
+    }
+
+  ?>
+  
+  <hr>
+
+</div>
 <?php include('./Includes/footer.html');  ?>
 
 </body>
