@@ -1,6 +1,7 @@
 <?php include('./Includes/header.html');  ?>
 <?php  include('./Configuration/DataConnection.php'); ?>
 
+<div class="body_detail">
 <?php
 $id = $_GET['id'];
 
@@ -17,38 +18,43 @@ if (mysqli_num_rows($result) > 0) {
 <hr>
 
 
-
-
 <?php  } }?>
 
+<div class="container">
+    <div class="row">
+        <?php 
+            $sql = "SELECT * FROM `places` WHERE country_id=$id";
+            $result = mysqli_query($connection, $sql);
 
-<div class="row container-fluid my-2">
-
-    <?php 
-
-        $sql = "SELECT * FROM `places` WHERE country_id=$id";
-          $result = mysqli_query($connection,$sql);
-
-        if (mysqli_num_rows($result) > 0) {
-          while ($row = mysqli_fetch_array($result)) {
-    ?>
-    <div class="col-lg-3 col-md-6 col-sm-6 container-fluid div_details_places my-2">
-        <div class="container-fluid">
-            <h4 class="text-center my-3"><?php echo $row['place_name']; ?></h4>
-            <hr>
-            <img src="<?php echo $row['place_img']; ?>" alt="" class="container-fluid" width="100%" height="200px">
-            <hr>
-            <p class="container-fluid"><?php echo $row['place_description']; ?></p>
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_array($result)) {
+        ?>
+        <div class="col-md-3 mb-4">
+            <div class="card custom-card h-100 places_card">
+                <img src="<?php echo $row['place_img']; ?>" alt="<?php echo $row['place_name']; ?>" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-center"><b><?php echo $row['place_name']; ?></b></h5>
+                    <p class="card-text flex-grow-1"><?php echo $row['place_description']; ?></p>
+                    <div class="mt-auto">
+                        <button class="btn btn-outline-primary readMoreBtn">Read More ></button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <?php
+                }
+            }
+        ?>
     </div>
-    <?php
-          }
-        }
-    ?>
-
-
-
 </div>
+
+
+
+
+
+
+
+
 <br><br>
 <?php include('./Includes/footer.html');  ?>
 </body>

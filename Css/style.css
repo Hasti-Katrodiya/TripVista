@@ -1,32 +1,31 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@200;400&family=Raleway:ital,wght@0,200;1,600&display=swap'); */
-
-/* font-family: 'Borel', cursive;
-font-family: 'Poppins', sans-serif;
-font-family: 'Raleway', sans-serif; */
-
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif !important;
-    /* font-family: 'Baloo Bhai 2', cursive !important; */
-    /* overflow-x: hidden; */
+    /* font-family: 'Poppins', sans-serif !important; */
 }
 
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-image: url('./Images/banner_back.jpg');
+}
+
+header {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+
+/* navbar */
 .nav-link {
+    font-family: 'Poppins', sans-serif !important;
     color: white !important;
     padding: 15px;
     border: 2px transparent solid;
-
 }
 
 .nav-link:hover {
-    /* background-color: white; */
-    /* color: black !important; */
     border-bottom: solid 2px white;
-    /* font-size: 25px !important; */
-    /* border-radius: 10px; */
 }
-
 
 #navbarSupportedContent {
     font-size: 18px !important;
@@ -38,6 +37,7 @@ font-family: 'Raleway', sans-serif; */
     background-color: rgba(11, 77, 153, 0.913);
 }
 
+/* carousel */
 .caption_p {
     font-size: 50px !important;
     color: rgb(252, 241, 241);
@@ -48,44 +48,41 @@ font-family: 'Raleway', sans-serif; */
 .caption_detail {
     color: #fcfcfb;
     background-color: rgb(123, 101, 2);
-    /* font-size: 15px; */
 }
 
-.footer_custom {
-    /* background-color: rgba(11, 77, 153, 0.913); */
-    color: white;
-    /* font-family: Georgia; */
-    padding: 20px;
-    letter-spacing: 2px;
-}
-
-.footer_links {
-    text-decoration: none;
-    color: white;
-    /* font-family: Georgia; */
-}
-
+/* content with img */
 .h2_custom {
     letter-spacing: 3px;
     font-weight: 900;
     color: rgba(6, 46, 91, 0.913) !important;
-
+    font-family: 'Poppins', sans-serif !important;
+    background: transparent !important;
 }
 
 .para_custom {
     font-size: 23px;
     color: rgb(15, 111, 112) !important;
+    font-family: 'Poppins', sans-serif !important;
     text-indent: 130px;
 }
 
-/* index.php */
-.country_imgs {
+/* country img with animation */
+/* country name styling */
+.country_name_box {
+    position: absolute;
+    color: white;
+    width: 50%;
+    text-align: center;
+    bottom: 0;
+    background-color: rgba(6, 6, 6, 1.0);
+    z-index: 2;
+}
 
+.country_imgs {
     transition: transform 0.3s;
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 .country_container {
@@ -98,7 +95,11 @@ font-family: 'Raleway', sans-serif; */
 
 }
 
-/* details */
+/* .country_container:hover .country_name_box {
+    transform: scale(1.4);
+} */
+
+/* country detail */
 .detail_h1 {
     /* color: rgb(202, 175, 5) !important;
     /* background-color: rgba(0, 0, 0, 0.29) transparent; 
@@ -110,20 +111,89 @@ font-family: 'Raleway', sans-serif; */
 
 }
 
-.div_details_places {
-    box-shadow: -1px 1px 18px 3px #8baa9f;
-
-}
-
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
 }
 
+/* contry_Detail_places!! */
+.card-text {
+    text-indent: 50;
+}
+
+.places_card:hover {
+
+    box-shadow: 5px 5px 0px 0px #0d6efd !important;
+}
+
+
+
+/* Button styling */
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 576px) {
+    .custom-card {
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .custom-card .card-img-top {
+        height: 200px;
+        /* Adjust image height for smaller screens */
+    }
+}
+
+
+
+
+
+
+/* about us page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query for navbar */
 @media screen and (max-width:760px) {
 
     .quick_links {
         align-items: center;
     }
+}
+
+/* footer */
+.footer_custom {
+    /* background-color: rgba(11, 77, 153, 0.913); */
+    color: white;
+    /* font-family: Georgia; */
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.footer_links {
+    text-decoration: none;
+    color: white;
+    /* font-family: Georgia; */
 }
