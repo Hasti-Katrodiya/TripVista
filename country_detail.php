@@ -20,7 +20,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <?php  } }?>
 
-<div class="container">
+<div class="container form_css">
     <div class="row">
         <?php 
             $sql = "SELECT * FROM `places` WHERE country_id=$id";

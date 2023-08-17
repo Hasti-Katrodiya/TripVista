@@ -4,25 +4,27 @@
 <!-- Data Connection -->
 <?php  include('./Configuration/DataConnection.php'); ?>
 
-<div class="contact-container">
-    <div class="contact-form">
-        <h2 class="form-heading">Contact Us</h2>
-        <form action="process_contact.php" method="post">
-            <div class="form-group">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" name="name" class="form-input" required>
-            </div>
-            <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" name="email" class="form-input" required>
-            </div>
-            <div class="form-group">
-                <label for="message" class="form-label">Message</label>
-                <textarea id="message" name="message" class="form-textarea" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn" >Submit</button>
-        </form>
-    </div>
+<div class="container form_css">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Message</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <br>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </div>
 
 <!-- Footer File -->

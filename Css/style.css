@@ -20,11 +20,11 @@ header {
     font-family: 'Poppins', sans-serif !important;
     color: white !important;
     padding: 15px;
-    border: 2px transparent solid;
+    border-bottom: solid 2px transparent !important;
 }
 
 .nav-link:hover {
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px white !important;
 }
 
 #navbarSupportedContent {
@@ -196,4 +196,12 @@ header {
     text-decoration: none;
     color: white;
     /* font-family: Georgia; */
+}
+
+
+/* contact us */
+
+.form_css {
+    padding: 50px;
+    width: 500px !important;
 }
