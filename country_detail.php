@@ -14,10 +14,8 @@ if (mysqli_num_rows($result) > 0) {
 
 <h1 class="text-center my-3 detail_h1 container-fluid "> <i>Top Tourist Places to Visit in <?php echo $row['Country_Name']; ?></i></h1>
 
-<img src="<?php echo $row['Country_img'];?>" alt="img" height="450px" width="100%" class="container-fluid my-2">
+<img src="<?php echo $row['Country_img'];?>" alt="img" height="850px" width="100%" class="container-fluid my-2">
 <hr>
-
-
 <?php  } }?>
 
 <div class="container form_css">
@@ -29,8 +27,8 @@ if (mysqli_num_rows($result) > 0) {
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_array($result)) {
         ?>
-        <div class="col-md-3 mb-4">
-            <div class="card custom-card h-100 places_card">
+        <div class="col-md-4 container mb-4">
+            <div class=" card custom-card h-100 places_card">
                 <img src="<?php echo $row['place_img']; ?>" alt="<?php echo $row['place_name']; ?>" class="card-img-top">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-center"><b><?php echo $row['place_name']; ?></b></h5>

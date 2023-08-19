@@ -24,6 +24,7 @@
     <!--Bootstrap JS Link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- custom script link -->
 </head>
 
 <body>
@@ -60,7 +61,8 @@
     </div>
     <!-- model ends -->
 
-    <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right,#04335b, #0e5ca1, #0483ae);">
+    <!-- linear-gradient(to right,#04335b, #0e5ca1, #0483ae); -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.php"> <img src="./Images/TripVista.png" alt="" height="50px"
                     style="border-radius: 5%;"></a>
@@ -74,10 +76,6 @@
                     <li class="nav-item nav_custom_item">
                         <a class="nav-link mx-2 px-4 " href="./index.php">Home</a>
                     </li>
-                    <!-- <li class=" nav_custom_item">
-                        <a class="nav-link mx-2 px-4" href="#">Destinations</a>
-                    </li> -->
-
                     <li class=" nav_custom_item dropdown">
                         <a class="nav-link dropdown-toggle mx-2 px-4" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -100,12 +98,18 @@
                     <li class="nav_custom_item">
                         <a class="nav-link mx-2 px-4" href="./contactus.php">Contact Us</a>
                     </li>
+                    <li class="nav_custom_item">
+                        <a class="nav-link mx-2 px-4" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#ModelForSearch"><i class="fas fa-search"></i></a>
+                    </li>
                     <!-- <li class="nav_custom_item">
                         <a href="#" type="submit" data-bs-toggle="modal" data-bs-target="#ModelForSearch"
-                            class="btn  float-right btn-sm bg-orange"><i class="fas fa-search"></i></button> -->
+                            class="btn  float-right btn-sm bg-orange search_custom"
+                            style="font-size: 18px; padding: 5px 15px;"> <i
+                                class="fas fa-search text-white "></i></button>
 
-                    <!-- <a class="nav-link mx-2 px-4" href=""></a> -->
-                    <!-- </li> -->
+                            <a class="nav-link mx-2 px-4" href=""></a>
+                    </li> -->
                     <li class=" nav_custom_item dropdown">
                         <a class="nav-link dropdown-toggle mx-2 px-4" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">

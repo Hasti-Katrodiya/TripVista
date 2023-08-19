@@ -4,25 +4,58 @@
 <!-- Data Connection -->
 <?php  include('./Configuration/DataConnection.php'); ?>
 
+
+<div class="container mx-auto px-0 mb-4">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 slide-right left_div">
+      <h1 class="hero-section">Discover New Horizons.
+      <span class="color-change">Explore the Unexplored.</span>
+      Your Journey Begins Here.</h1>
+      <p class="div-hero-para">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been..."</p>
+      <button class="btn-explore">Let's Explore >></button>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+    <h2 class="text-center">We Have <span class="color-change ">Achieve</span></h2>
+
+    <div class="row">
+      <div class="card col-md-3 col-sm-3 col-lg-3">
+        <img src="./Images/1.jpg" alt="img" class="card_img">
+      </div>
+      <div class="card col-md-3 col-sm-3 col-lg-3"></div>
+      <div class="card col-md-3 col-sm-3 col-lg-3"></div>
+      <div class="card col-md-3 col-sm-3 col-lg-3"></div>
+    </div>
+  </div>
+
+
+
+
 <!-- carousel starts-->
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+<!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner carousel_custom">
     <div class="carousel-item active">
-      <img src="./Images/slide1.jpg" class="d-block w-100" height="800px" alt="slide1">
+      <img src="./Images/slide1.jpg" class="d-block w-100" height="900px" alt="slide1">
       <div class="carousel-caption d-none d-md-block">
         <p class="caption_p">Explore Cultural Richness</p>
         <p class="caption_detail">Immerse yourself in the diversity of cultures, traditions, and histories that shape our world</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./Images/slide2.jpg" class="d-block w-100" alt="slide2" height="800px">
+      <img src="./Images/slide2.jpg" class="d-block w-100" alt="slide2" height="900px">
       <div class="carousel-caption d-none d-md-block">
         <p class="caption_p">Embrace Adventure</p>
         <p class="caption_detail">Challenge your limits, seek thrills, and create stories that will be told for generations.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./Images/slide3.jpg" class="d-block w-100" alt="slide3" height="800px">
+      <img src="./Images/slide3.jpg" class="d-block w-100" alt="slide3" height="900px">
       <div class="carousel-caption d-none d-md-block">
         <p class="caption_p">Culinary Adventures Await</p>
         <p class="caption_detail">Savor the world's flavors as you embark on a gastronomic journey,diverse cuisines and culinary delights.</p>
@@ -37,13 +70,13 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
+</div> -->
 <!-- carousel End!!-->
 
 <br>
 
 <!-- content with image start-->
-<h2 class="text-center h2_custom py-2">Explore Unique Cultures and Landscapes</h2>
+<!-- <h2 class="text-center h2_custom py-2">Explore Unique Cultures and Landscapes</h2>
 <br>
 <div class="container-fluid row my-3">
     <div class="col-lg-6 col-md-12">
@@ -52,7 +85,7 @@
     <div class="col-lg-6 col-md-12">
         <img class="img-fluid container-fluid" src="./Images/9.jpg" alt="">
     </div>
-</div>
+</div> -->
 <!-- content with image End!!-->
 
 <!-- Banner Section Start -->
@@ -60,19 +93,21 @@
   <img src="./Images/banner.jpg" alt="banner">
 </div> -->
 <!-- Banner Section End!! -->
-
+<!-- 
 <br>
-<section >
-  <h1>hello </h1>
-  <h1>hello </h1>
-  <h1>hello </h1>
-  <h1>hello </h1>
-  <h1>hello </h1>
+<section>
+ <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        
+      </div>
+    </div>
+ </div>
 </section>
-<br>
+<br> -->
 
 <!-- content with image start-->
-<h2 class="text-center h2_custom py-2">Roaming the Globe: Adventures Await</h2>
+<!-- <h2 class="text-center h2_custom py-2">Roaming the Globe: Adventures Await</h2>
 <div class="container-fluid row my-3 ">
     <div class="col-lg-6 col-md-12">
         <img class="img-fluid container-fluid" src="./Images/thailand.jpg" alt="">
@@ -81,15 +116,15 @@
         <p class="para_custom container-fluid">One of the most rewarding aspects of our travel tours is the opportunity to connect with fellow travelers who share your sense of adventure. Forge new friendships, share stories, and create bonds that often last long after the journey ends.</p>
         <p class="para_custom container-fluid">Engage with local communities and learn about their customs and way of life. Our tours prioritize meaningful interactions and create memories that last a lifetime.</p>
     </div>
-</div>
+</div> -->
 <!-- content with image End!!-->
 
-<br>
+<!-- <br>
 
-<h2 class="text-center h2_custom py-2">A Big World there to Explore</h2>
+<h2 class="text-center h2_custom py-2">A Big World there to Explore</h2> -->
 
 <!-- Country Display with Animation start -->
-<div class="row container-fluid">
+<!-- <div class="row container-fluid">
   <?php
     $sql = "SELECT * FROM `country`";
     $result = mysqli_query($connection,$sql);
@@ -120,9 +155,10 @@
       }
     }
   ?>
-</div>
+</div> -->
 
 <!-- Country Display with Animation End!! -->
+<script src="./JavaScript/script.js"></script>
 
 <!-- Footer File -->
 <?php  include('./Includes/footer.html');?>
