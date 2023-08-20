@@ -11,22 +11,20 @@
 
 body {
     font-family: 'Poppins', sans-serif !important;
-    /* background-image: url('./Images/banner_back.jpg'); */
+    /* background-image: url('../Images/banner.jpg'); */
+    /* background-image: url('../Images/b.jpg'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: left center; */
+    /* background-size: cover; */
 }
 
 header {
     font-family: 'Poppins', sans-serif !important;
 }
 
-section {
-    background-image: url('./Images/banner_back.jpg');
+.navbar-brand {
+    margin-right: 180px !important;
 }
-
-/* navbar */
-/* Add box shadow to the navbar/header */
-/* .navbar {
-    box-shadow: 0px 3px 2px 0px #777777;
-} */
 
 .nav-link {
     font-family: 'Poppins', sans-serif !important;
@@ -40,7 +38,6 @@ section {
     content: "";
     position: absolute;
     bottom: -2px;
-    /* Start with the border hidden above the link */
     left: 0;
     width: 0;
     height: 2px;
@@ -117,6 +114,7 @@ section {
 
 .btn-explore:hover {
     background-position: left;
+    color: white !important;
 }
 
 
@@ -144,16 +142,39 @@ section {
     animation: slide-right 1s cubic-bezier(.25, .46, .45, .94) both;
 }
 
-.card_img {
+.counter-icons {
+    background: transparent;
+    font-size: 60px;
     border-radius: 50%;
     color: white;
-    align-self: center;
-    width: 150px;
-    height: auto;
-    margin: 30px;
+    margin: 80px 30px;
+    padding: 50px;
+    /* border: #3776ff 1px solid; */
+    box-shadow: 0px 0px 10px 5px white;
+    ;
     /* padding: 10px; */
 }
 
+.counter_h3 {
+    background: transparent;
+    font-weight: 800;
+    margin-left: 80px;
+    color: white;
+}
+
+.counter_para {
+    background: transparent;
+    margin-left: 60px;
+    font-weight: 900;
+    color: white;
+}
+
+.banner_img {
+    background-image: url('../Images/backs.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+}
 
 /* carousel */
 .caption_p {
@@ -171,10 +192,11 @@ section {
 /* content with img */
 .h2_custom {
     letter-spacing: 3px;
+    line-height: 80px;
     font-weight: 900;
-    color: rgba(6, 46, 91, 0.913) !important;
+    /* color: var(--mycolor); */
     font-family: 'Poppins', sans-serif !important;
-    background: transparent !important;
+    /* background: transparent !important; */
 }
 
 .para_custom {
@@ -189,11 +211,12 @@ section {
 .country_name_box {
     position: absolute;
     color: white;
-    width: 50%;
+    width: 60%;
     text-align: center;
     bottom: 0;
-    background-color: rgba(6, 6, 6, 1.0);
+    background-color: var(--mycolor);
     z-index: 2;
+    padding: 3px;
 }
 
 .country_imgs {
@@ -223,7 +246,7 @@ section {
     /* background-color: rgba(0, 0, 0, 0.29) transparent; 
     box-shadow: 0px 5px 20px 5px #7b797f; */
     color: rgb(202, 175, 5) !important;
-    box-shadow: 0px 5px 20px 5px #7b797f;
+    box-shadow: 0px 5px 20px 5px var(--mycolor);
     opacity: 0;
     animation: fadeIn 2.5s forwards;
 
@@ -242,7 +265,7 @@ section {
 
 .places_card:hover {
 
-    box-shadow: 5px 5px 0px 0px #0d6efd !important;
+    box-shadow: 5px 5px 0px 0px var(--mycolor) !important;
 }
 
 

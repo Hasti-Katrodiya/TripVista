@@ -7,7 +7,7 @@
 
 <div class="container mx-auto px-0 mb-4">
   <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 slide-right left_div">
+    <div class="col-lg-6 col-md-6 col-sm-12 slide-right ">
       <h1 class="hero-section">Discover New Horizons.
       <span class="color-change">Explore the Unexplored.</span>
       Your Journey Begins Here.</h1>
@@ -21,16 +21,30 @@
 
 
 
-<div class="container">
-    <h2 class="text-center">We Have <span class="color-change ">Achieve</span></h2>
-
-    <div class="row">
-      <div class="card col-md-3 col-sm-3 col-lg-3">
-        <img src="./Images/1.jpg" alt="img" class="card_img">
+<h2 class="text-center my-4">We Have <span class="color-change ">Achieve</span></h2>
+<div class="container-fluid   banner_img my-4" >
+    <div class="row my-4 py-5">
+      <div class=" col-md-3 col-sm-6 col-lg-3  ">
+      <i class="fas fa-plane counter-icons"></i>
+      <h3 class="counter_h3">700+</h3>
+      <p class="counter_para">Flight Booking</p>
       </div>
-      <div class="card col-md-3 col-sm-3 col-lg-3"></div>
-      <div class="card col-md-3 col-sm-3 col-lg-3"></div>
-      <div class="card col-md-3 col-sm-3 col-lg-3"></div>
+      <div class=" col-md-3 col-sm-6 col-lg-3  ">
+      <i class='fas fa-place-of-worship counter-icons'></i>
+      <h3 class="counter_h3">700+</h3>
+      <p class="counter_para">Amazing Tours</p>
+      </div>
+      <div class=" col-md-3 col-sm-6 col-lg-3  ">
+      <i class='fas fa-ship counter-icons'></i>
+      <h3 class="counter_h3">100+</h3>
+      <p class="counter_para">Cruises Booking</p>
+      </div>
+      <div class=" col-md-3 col-sm-6 col-lg-3  ">
+      <i class='	fas fa-ticket-alt counter-icons'></i>
+      <h3 class="counter_h3 ">500+</h3>
+      <p class="counter_para">Ticket Booking</p>
+      </div>
+    
     </div>
   </div>
 
@@ -119,12 +133,12 @@
 </div> -->
 <!-- content with image End!!-->
 
-<!-- <br>
-
-<h2 class="text-center h2_custom py-2">A Big World there to Explore</h2> -->
-
+<div class="container">
+<!-- <p class="text-left">TOP DESTINATIONS</p> -->
+<h2 class="text-left h2_custom my-3">EXPLORE POPULAR <span class="color-change"> DESTINATIONS</span> !!</h2> 
+</div>
 <!-- Country Display with Animation start -->
-<!-- <div class="row container-fluid">
+ <div class="row container-fluid">
   <?php
     $sql = "SELECT * FROM `country`";
     $result = mysqli_query($connection,$sql);
@@ -155,7 +169,7 @@
       }
     }
   ?>
-</div> -->
+</div> 
 
 <!-- Country Display with Animation End!! -->
 <script src="./JavaScript/script.js"></script>
