@@ -70,7 +70,7 @@ header {
 /* index.php */
 
 /* hero-section */
-.hero-section {
+.content_para {
     line-height: 73px;
     font-weight: 600;
     padding-top: 60px;
@@ -78,18 +78,16 @@ header {
     /* letter-spacing: 2px; */
 }
 
-/* .left-div {
-    background-image: url(/Images/5.jpg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: contain;
-} */
+
+.img_banner {
+    background-size: cover;
+}
 
 .color-change {
     color: var(--mycolor);
 }
 
-.div-hero-para {
+.div_para {
     margin: 40px 0px 0px;
     font-size: 1.2rem;
     font-weight: 500;
@@ -116,15 +114,6 @@ header {
     background-position: left;
     color: white !important;
 }
-
-
-
-
-
-/* 
-.css-jfyn04 {
-   
-} */
 
 @keyframes slide-right {
     0% {
@@ -245,7 +234,7 @@ header {
     /* color: rgb(202, 175, 5) !important;
     /* background-color: rgba(0, 0, 0, 0.29) transparent; 
     box-shadow: 0px 5px 20px 5px #7b797f; */
-    color: rgb(202, 175, 5) !important;
+    /* color: rgb(202, 175, 5) !important; */
     box-shadow: 0px 5px 20px 5px var(--mycolor);
     opacity: 0;
     animation: fadeIn 2.5s forwards;
@@ -287,10 +276,6 @@ header {
 }
 
 
-
-
-
-
 /* about us page */
 
 
@@ -327,8 +312,9 @@ header {
 /* footer */
 .footer_custom {
     /* background-color: rgba(11, 77, 153, 0.913); */
-    background-color: var(--mycolor) !important;
-    color: white;
+    /* background-color: var(--mycolor) !important; */
+    background-color: black;
+    color: rgb(255, 255, 255);
     /* font-family: Georgia; */
     padding: 20px;
     letter-spacing: 2px;
@@ -340,6 +326,16 @@ header {
     /* font-family: Georgia; */
 }
 
+.footer_links:hover {
+    color: var(--mycolor);
+    text-decoration: solid;
+}
+
+.footer_h5 {
+    color: var(--mycolor);
+    font-weight: 900;
+
+}
 
 /* contact us */
 
