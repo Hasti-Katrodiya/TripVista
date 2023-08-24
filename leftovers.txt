@@ -1,3 +1,6 @@
-icon for footer
 
+
+header-right:0;
+
+footer contact us spacing
 media query in headder 

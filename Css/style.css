@@ -23,17 +23,18 @@ header {
 }
 
 .navbar-brand {
-    margin-right: 180px !important;
+    /* right: 0 !important; */
+    /* margin-right: 40% !important; */
 }
+
 
 .nav-link {
     font-family: 'Poppins', sans-serif !important;
     color: black !important;
-    margin: 2px 15px;
+    /* margin: 2px 15px; */
     position: relative;
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
-
 .nav-link::before {
     content: "";
     position: absolute;
@@ -44,7 +45,9 @@ header {
     background-color: var(--mycolor);
     transition: width 0.3s ease;
 }
-
+#navbarSupportedContent{
+right: 0;
+}
 .nav-link:hover {
     color: var(--mycolor) !important;
 }
@@ -95,7 +98,11 @@ header {
     max-width: 400px;
     line-height: 38px;
 }
-
+.contetnt_div{
+    /* font-si/ze:20px; */
+    text-indent: 30%;
+    
+}
 .btn-explore {
     position: relative;
     border-radius: 8px;
@@ -222,7 +229,6 @@ header {
 
 .country_container:hover .country_imgs {
     transform: scale(1.4);
-
 }
 
 /* .country_container:hover .country_name_box {
@@ -277,7 +283,11 @@ header {
 
 
 /* about us page */
-
+.AboutUs_img_team{
+    border-radius: 50%;
+    width: 100%;
+    height:400px;
+}
 
 
 
@@ -338,8 +348,58 @@ header {
 }
 
 /* contact us */
+.background_banner {
+    background-image: url('../Images/contactUs.jpg');
+    background-size: cover;
+    height: 400px;
+}
 
-/* .form_css {
-    padding: 50px;
-    width: 500px !important;
+.contactUs_h1 {
+    font-weight: 900;
+    letter-spacing: 2px;
+    /* line-height: 80px; */
+}
+
+.contactUs_h2 {
+    line-height: 80px;
+    font-weight: 900;
+    font-size: 70px;
+    letter-spacing: 2px;
+    color: white;
+    /* background: transparent; */
+    padding: 35px;
+    margin-top: 180px;
+}
+
+.contactUs_h3 {
+    color: grey;
+}
+
+.contactUs_Img_Country {
+    height: 120px;
+}
+.contactUs_Img_Country_div{
+    box-shadow:0 4px 24px rgba(0,0,0,.08);
+}
+.back_AboutUs{
+    background-image: url('../Images/About_Us.jpg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+}
+.contactUs_Heading{
+    font-size: 70px;
+}
+
+.contactUs_para{
+    margin: 50px 0;
+    text-indent: 30%;
+}
+/* .contactUs_phone {
+    font-size: 40px;
+}
+
+.contactUs_details {
+    padding-left: 20px;
+    margin-left: 60px;
 } */
