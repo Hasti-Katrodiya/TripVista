@@ -1,4 +1,4 @@
-<?php include('./Includes/header.html');  ?>
+<?php include('./includes/header.html');  ?>
 <?php  include('./Configuration/DataConnection.php'); ?>
 
 <div class="my-2">
@@ -52,6 +52,6 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <br><br>
-<?php include('./Includes/footer.html');  ?>
+<?php include('./includes/footer.html');  ?>
 </body>
 </html>

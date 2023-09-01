@@ -1,11 +1,11 @@
 <!-- Header File -->
-<?php include('./Includes/header.html');  ?>
+<?php include('./includes/header.html');  ?>
 
 <!-- Data Connection -->
 <?php  include('./Configuration/DataConnection.php'); ?>
 
 <!-- Footer File -->
-<?php  include('./Includes/footer.html');?>
+<?php  include('./includes/footer.html');?>
 
 </body>
 </html>

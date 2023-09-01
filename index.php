@@ -1,6 +1,5 @@
 <!-- Header File -->
-<?php include('./Includes/header.html'); ?>
-
+<?php include('./includes/header.html'); ?>
 <!-- Data Connection -->
 <?php include('./Configuration/DataConnection.php'); ?>
 
@@ -8,26 +7,29 @@
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner carousel_custom">
     <div class="carousel-item active">
-      <img src="./Images/slide1.jpg" class="d-block w-100" height="900px" alt="slide1">
+      <img src="./images/slide1.jpg" class="d-block w-100" height="900px" alt="slide1">
       <div class="carousel-caption d-none d-md-block">
-        <p class="caption_p">Explore Cultural Richness</p>
-        <p class="caption_detail">Immerse yourself in the diversity of cultures, traditions, and histories that shape
+        <p class="caption_p py-5 display-2">Culinary Adventures Await</p>
+        <p class="caption_detail display-6 py-4">Immerse yourself in the diversity of cultures that
+          shape
           our world</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./Images/slide2.jpg" class="d-block w-100" alt="slide2" height="900px">
+      <img src="./images/slide2.jpg" class="d-block w-100" alt="slide2" height="900px">
       <div class="carousel-caption d-none d-md-block">
-        <p class="caption_p">Embrace Adventure</p>
-        <p class="caption_detail">Challenge your limits, seek thrills, and create stories that will be told for
+        <p class="caption_p  py-5 display-2 ">Embrace Adventure</p>
+        <p class="caption_detail display-6 py-4">Challenge your limits, seek thrills, and create stories that will be
+          told for
           generations.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./Images/slide3.jpg" class="d-block w-100" alt="slide3" height="900px">
+      <img src="./images/slide3.jpg" class="d-block w-100" alt="slide3" height="900px">
       <div class="carousel-caption d-none d-md-block">
-        <p class="caption_p">Culinary Adventures Await</p>
-        <p class="caption_detail">Savor the world's flavors as you embark on a gastronomic journey,diverse cuisines and
+        <p class="caption_p py-5 display-2">Explore Cultural Richness</p>
+        <p class="caption_detail display-6 py-4">Savor the world's flavors as you embark on a gastronomic
+          journey,diverse cuisines and
           culinary delights.</p>
       </div>
     </div>
@@ -56,7 +58,7 @@
       <button class="btn-explore">Let's Explore >></button>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12">
-      <img src="./Images/banner.jpg" alt="img" class="container img_banner">
+      <img src="./images/banner.jpg" alt="img" class="container img_banner">
       <p class="para_content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis obcaecati molestiae
         tenetur
         ea modi quaerat
@@ -70,25 +72,25 @@
 
 <br>
 
-<div class="-fluid banner_img my-4 py-4">
+<div class="container-fluid banner_img my-4 py-4">
 
-  <h2 class="text-center my-4 py-4 text-light display-2">We Have Achieve</h2>
+  <!-- <h2 class="text-center my-4 py-4 text-light display-2">We Have Achieve</h2> -->
 
   <div class="row">
-    <div class="col-lg-3 col-md-6 mb-4">
+    <div class="col-lg-3 col-md-6 col-sm-12 ">
       <div class="card counter_card">
         <div class="card-body text-center">
-          <i class="fas fa-plane counter-icons"></i>
+          <i class="fa-solid fa-paper-plane counter-icons"></i>
           <h4 class="card-title counter_card_title">Flight Bookings</h4>
           <p class="card-text counter_para" data-countto="760" data-duration="8000">0+</p>
         </div>
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-6 mb-4">
+    <div class="col-lg-3 col-md-6 col-sm-12">
       <div class="card counter_card">
         <div class="card-body text-center">
-          <i class='fas fa-place-of-worship counter-icons'></i>
+          <i class='fa-solid fa-place-of-worship counter-icons'></i>
           <h4 class="card-title counter_card_title">Amazing Tours</h4>
           <p class="card-text counter_para" data-countto="350" data-duration="8000">0+
           </p>
@@ -96,7 +98,7 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-6 mb-4 ">
+    <div class="col-lg-3 col-md-6 col-sm-12">
       <div class="card counter_card">
         <div class="card-body text-center ">
           <i class='fas fa-ship counter-icons'></i>
@@ -106,10 +108,10 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-6 mb-4">
+    <div class="col-lg-3 col-md-6 col-sm-12">
       <div class="card counter_card">
         <div class="card-body text-center">
-          <i class='	fas fa-ticket-alt counter-icons'></i>
+          <i class='	fa-solid fa-ticket counter-icons'></i>
           <h4 class="card-title counter_card_title">Ticket Booking</h4>
           <p class="card-text counter_para" data-countto="840" data-duration="8000">0+</p>
         </div>
@@ -119,14 +121,50 @@
 </div>
 <br>
 
-<!-- content with image start-->
-<h2 class="text-center h2_custom py-4 my-4 display-4">Roaming the Globe:<span class="color-change"> Adventures
-    Await</span></h2>
-<div class="container-fluid row my-3 ">
-  <div class="col-lg-6 col-md-12">
-    <img class="img-fluid container-fluid adventure_img" src="./Images/SVGs/plantrip.svg" alt="img">
+<br>
+<h2 class="text-center h2_custom py-4 my-4 display-4">Featured <span class="color-change"> PACKAGES</span></h2>
+<div class="container">
+  <div class="row">
+    <!-- Package 1 -->
+    <div class="col-md-4">
+      <div class="package-card">
+        <img src="./images/pack1.jpg" alt="Package 1" class="package-img">
+        <h3 class="package-title">Explore Paradise Island</h3>
+        <p class="package-description">Discover the stunning beauty of Paradise Island with our exclusive package. Enjoy
+          pristine beaches, crystal-clear waters, and luxurious accommodations. </p>
+      </div>
+    </div>
+
+    <!-- Package 2 -->
+    <div class="col-md-4">
+      <div class="package-card">
+        <img src="./images/pack2.jpg" alt="Package 2" class="package-img">
+        <h3 class="package-title">Adventure at Sea </h3>
+        <p class="package-description">Set sail on an unforgettable adventure at sea. Explore multiple destinations,
+          enjoy onboard entertainment, and relax in luxurious cabins. </p>
+      </div>
+    </div>
+
+    <!-- Package 3 -->
+    <div class="col-md-4">
+      <div class="package-card">
+        <img src="./images/pack3.jpg" alt="Package 3" class="package-img">
+        <h3 class="package-title"> Fun and Adventure</h3>
+        <p class="package-description">Create lasting memories with your family on an adventure-packed vacation. Go on
+          thrilling excursions, explore family-friendly attractions, and stay in comfortable family suites. </p>
+      </div>
+    </div>
   </div>
-  <div class="col-lg-6 col-md-12">
+</div>
+<!-- content with image start-->
+<br><br>
+<h2 class="text-center h2_custom py-4 my-4  display-4">Roaming the Globe:<span class="color-change"> Adventures
+    Await</span></h2>
+<div class="container-fluid row  ">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <img class=" img-fluid adventure_img" src="./images/SVGs/plantrip.svg" alt="img">
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
     <div class="contetnt_div  py-4 px-4 my-4 ">
 
       <!-- <p class="para_custom container-fluid"> -->
@@ -188,44 +226,15 @@
 </div>
 <!-- Country Display with Animation End!! -->
 
-<!-- content with image start-->
-<h2 class="text-center h2_custom py-4 my-4 display-3">Explore Unique Cultures and Landscapes</h2>
-<br>
-<div class="container-fluid">
-  <div class="row my-4 ">
-    <div class="col-lg-6 col-md-12">
-
-      <h3 class="h2_custom text-center my-3 display-5">Exploring New World</h3>
-      <p class="para_custom container-fluid">
 
 
-        Our Tours offer an opportunity to immerse yourself in the vibrant cultures
-        and breathtaking landscapes of destinations around the world. From the bustling markets of Marrakech to the
-        serene temples of Kyoto, each tour is crafted to showcase the essence of the region, allowing you to connect
-        with locals, savor authentic cuisine, and witness awe-inspiring natural wonders.Our Tours offer an opportunity
-        to immerse yourself in the vibrant cultures
-        and breathtaking landscapes of destinations around the world. From the bustling markets of Marrakech to the
-        serene temples of Kyoto, each tour is crafted to showcase the essence of the region, allowing you to connect
-        with locals, savor authentic cuisine, and witness awe-inspiring natural wonders.Our Tours offer an opportunity
-        to immerse yourself in the vibrant cultures
-        and breathtaking landscapes of destinations around the world. From the bustling markets of Marrakech to the
-        serene temples of Kyoto, each tour is crafted to showcase the essence of the region, allowing you to connect
-        with locals, savor authentic cuisine, and witness awe-inspiring natural wonders.</p>
-    </div>
-    <div class="col-lg-6 col-md-12">
-      <img class="img-fluid container-fluid" src="./Images/9.jpg" alt="img...">
-    </div>
-  </div>
-</div>
-<!-- content with image End!!-->
-
-
+<br><br>
 
 <!-- Footer File -->
-<?php include('./Includes/footer.html'); ?>
+<?php include('./includes/footer.html'); ?>
 
 </body>
 
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<script src="./JavaScript/script.js"></script>
+<script src="./js/script.js"></script>

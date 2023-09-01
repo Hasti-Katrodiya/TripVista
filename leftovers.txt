@@ -1,6 +1,20 @@
 
+Contact us:
+done
+
+About Us:
+done
+
+Index:
+done
+
+Profile:
+
 
 header-right:0;
 
-footer contact us spacing
-media query in headder 
+
+Responsive :
+done
+
+
