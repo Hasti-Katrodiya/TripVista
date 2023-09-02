@@ -4,12 +4,14 @@
 <!-- Data Connection -->
 <?php include('./Configuration/DataConnection.php'); ?>
 
-
+<!-- Banner Section Starts -->
 <div class="back_AboutUs py-4">
     <h2 class="contactUs_h2 display-1">About US</h2>
-    <b><br>
+    <br><br>
 </div>
+<!-- Banner Section Ends -->
 
+<!-- content section starts -->
 <div class="container-fluid px-5 mx-auto  mb-4">
     <div class="row my-4">
         <div class="col-lg-6 col-md-6 col-sm-12 slide-right ">
@@ -29,8 +31,11 @@
         </div>
     </div>
 </div>
+<!-- content section Ends!! -->
 
 
+
+<!-- Team members starts -->
 <h2 class="text-center my-4 py-4 contactUs_Heading display-2">MEET<span class="color-change ">OUR TEAM</span> !!</h2>
 
 <section id="meet-our-team" class="section">
@@ -63,8 +68,11 @@
         </div>
     </div>
 </section>
+<!-- Team members Ends -->
+<br>
+<br>
 
-<br><br>
+<!-- Testimonial starts -->
 <h2 class="text-center my-4 py-4 contactUs_Heading display-2"> <span class="color-change ">Testimonial</span> !!</h2>
 <section id="testimonial" class="py-5">
     <div class="container">
@@ -108,6 +116,7 @@
         </div>
     </div>
 </section>
+<!-- Testimonial Ends -->
 
 
 <!-- Footer File -->

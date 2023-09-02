@@ -9,10 +9,7 @@ Index:
 done
 
 Profile:
-
-
-header-right:0;
-
+not attractive
 
 Responsive :
 done

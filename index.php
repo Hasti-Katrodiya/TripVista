@@ -1,5 +1,6 @@
 <!-- Header File -->
 <?php include('./includes/header.html'); ?>
+
 <!-- Data Connection -->
 <?php include('./Configuration/DataConnection.php'); ?>
 
@@ -7,7 +8,7 @@
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner carousel_custom">
     <div class="carousel-item active">
-      <img src="./images/slide1.jpg" class="d-block w-100" height="900px" alt="slide1">
+      <img src="./images/slide1.jpg" class="d-block w-100 carousel_img" alt="slide1">
       <div class="carousel-caption d-none d-md-block">
         <p class="caption_p py-5 display-2">Culinary Adventures Await</p>
         <p class="caption_detail display-6 py-4">Immerse yourself in the diversity of cultures that
@@ -16,7 +17,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./images/slide2.jpg" class="d-block w-100" alt="slide2" height="900px">
+      <img src="./images/slide2.jpg" class="d-block w-100 carousel_img" alt="slide2">
       <div class="carousel-caption d-none d-md-block">
         <p class="caption_p  py-5 display-2 ">Embrace Adventure</p>
         <p class="caption_detail display-6 py-4">Challenge your limits, seek thrills, and create stories that will be
@@ -25,7 +26,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./images/slide3.jpg" class="d-block w-100" alt="slide3" height="900px">
+      <img src="./images/slide3.jpg" class="d-block w-100 carousel_img" alt="slide3">
       <div class="carousel-caption d-none d-md-block">
         <p class="caption_p py-5 display-2">Explore Cultural Richness</p>
         <p class="caption_detail display-6 py-4">Savor the world's flavors as you embark on a gastronomic
@@ -45,7 +46,7 @@
 </div>
 <!-- carousel End!!-->
 
-
+<!-- Content Section starts  -->
 <div class="container-fluid mx-auto  mb-4">
   <div class="row my-4">
     <div class="col-lg-6 col-md-6 col-sm-12 slide-right">
@@ -66,15 +67,14 @@
     </div>
   </div>
 </div>
-
-
-
+<!-- Content Section ENds!!  -->
 
 <br>
 
+<!-- Counter Starts  -->
 <div class="container-fluid banner_img my-4 py-4">
 
-  <!-- <h2 class="text-center my-4 py-4 text-light display-2">We Have Achieve</h2> -->
+  <h2 class="text-center my-4 py-4 text-light display-2">We Have Achieve</h2>
 
   <div class="row">
     <div class="col-lg-3 col-md-6 col-sm-12 ">
@@ -119,9 +119,11 @@
     </div>
   </div>
 </div>
+<!-- Counter Ends!!  -->
+<br>
 <br>
 
-<br>
+<!-- Packages detail starts -->
 <h2 class="text-center h2_custom py-4 my-4 display-4">Featured <span class="color-change"> PACKAGES</span></h2>
 <div class="container">
   <div class="row">
@@ -130,8 +132,10 @@
       <div class="package-card">
         <img src="./images/pack1.jpg" alt="Package 1" class="package-img">
         <h3 class="package-title">Explore Paradise Island</h3>
+        <p class="package-title">$8500</p>
         <p class="package-description">Discover the stunning beauty of Paradise Island with our exclusive package. Enjoy
-          pristine beaches, crystal-clear waters, and luxurious accommodations. </p>
+          pristine beaches, crystal-clear waters, and luxurious accommodations.
+        </p>
       </div>
     </div>
 
@@ -140,6 +144,7 @@
       <div class="package-card">
         <img src="./images/pack2.jpg" alt="Package 2" class="package-img">
         <h3 class="package-title">Adventure at Sea </h3>
+        <p class="package-title">$3280</p>
         <p class="package-description">Set sail on an unforgettable adventure at sea. Explore multiple destinations,
           enjoy onboard entertainment, and relax in luxurious cabins. </p>
       </div>
@@ -150,14 +155,20 @@
       <div class="package-card">
         <img src="./images/pack3.jpg" alt="Package 3" class="package-img">
         <h3 class="package-title"> Fun and Adventure</h3>
+        <p class="package-title">$2360</p>
         <p class="package-description">Create lasting memories with your family on an adventure-packed vacation. Go on
           thrilling excursions, explore family-friendly attractions, and stay in comfortable family suites. </p>
       </div>
     </div>
   </div>
 </div>
+<!-- Packages detail Ends!! -->
+
+<br>
+<br>
+
 <!-- content with image start-->
-<br><br>
+
 <h2 class="text-center h2_custom py-4 my-4  display-4">Roaming the Globe:<span class="color-change"> Adventures
     Await</span></h2>
 <div class="container-fluid row  ">
@@ -181,6 +192,7 @@
 </div>
 <!-- content with image End!!-->
 
+<!-- Country Display -Animated Starts -->
 <div class="container">
   <!-- <p class="text-left">TOP DESTINATIONS</p> -->
   <h2 class="text-left h2_custom my-4 py-4 display-2">EXPLORE POPULAR <span class="color-change"> DESTINATIONS</span> !!
@@ -224,11 +236,10 @@
   </div>
 </div>
 </div>
-<!-- Country Display with Animation End!! -->
+<!-- Country Display -Animated Ends!! -->
 
-
-
-<br><br>
+<br>
+<br>
 
 <!-- Footer File -->
 <?php include('./includes/footer.html'); ?>

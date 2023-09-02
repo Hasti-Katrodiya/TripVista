@@ -18,6 +18,7 @@
     <div class="col-md-6 col-lg-6 col-sm-12 my-4 py-3 px-4 py-4  contact-form">
       <!-- <h3 class="contactUs_h1 text-center">Contact Us </h3> -->
 
+      <!-- contact us form starts -->
       <form>
         <div class="form-group">
           <label for="name">Name:</label>
@@ -46,9 +47,10 @@
         <br>
         <button type="submit" class="btn_submit">Submit >></button>
       </form>
+      <!-- contact us form Ends!! -->
     </div>
 
-    <!-- Contact Details Card -->
+    <!-- Contact Details Card starts -->
     <div class="col-md-6 col-lg-6 col-sm-12 my-4 py-3 px-4 py-4  contact-card">
       <h3 class="contactUs_h1 text-center"><span class="color-change">TripVista</span> Pvt Ltd.</h3>
       <ul class="list-unstyled py-4 my-4 contact_detail_padding">
@@ -74,81 +76,14 @@
         </li>
       </ul>
     </div>
+    <!-- Contact Details Card Ends -->
   </div>
 </div>
 
-<!-- <section> -->
-
-
-
-<!-- <br> -->
-<!-- <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-6 col-sm-12 my-4 py-3 px-4 py-4  border_contactus_form">
-        <div class="mb-3 my-4 ">
-          <label class="form-label">Name:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-        </div>
-        <div class="mb-3 my-4">
-          <label class="form-label">Email:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-        </div>
-        <div class="mb-3 my-4">
-          <label class="form-label">Contact No.:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="">
-        </div>
-        <div class="mb-3 my-4 ">
-          <label class="form-label">Subject:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="">
-        </div>
-        <div class="mb-3 my-4">
-          <label class="form-label">Message:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
-        </div>
-        <div class="mb-3 my-4">
-          <button type="submit" class=" col-md-4 my-2 py-2 btn-explore">Submit ></button>
-        </div>
-      </div>
-      -->
-<!-- Contact Details Section -->
-<!-- <div class="card p-4 border-0 col-md-6 col-lg-6 col-sm-12">
-        <h3 class="contactUs_h1 text-center">
-          <span class="color-change">TripVista</span> Pvt Ltd.
-        </h3>
-        <ul class="list-unstyled py-4 my-4 contact_detail_padding">
-          <li class=" py-2">
-            <div class="mb-3">
-              <p class="contactus_p_contact_Details">
-                <i class="fa fa-phone color-change fa-lg"></i> (+91) 93270 88021
-              </p>
-            </div>
-          </li>
-          <li class=" py-2">
-            <div class="mb-3">
-              <p class="contactus_p_contact_Details">
-                <i class="fa fa-envelope color-change fa-lg"></i> tripvista@gmail.com
-              </p>
-            </div>
-          </li>
-          <li class=" py-2">
-            <div class="mb-3">
-              <p class="contactus_p_contact_Details">
-                <i class="fas fa-map-marker-alt color-change fa-lg"></i> Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div> -->
-
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </section> -->
 <br>
 <br>
 
+<!-- Global presence starts -->
 <h2 class="text-center contactUs_h1 display-3 my-4  py-4">Our Global <span class="color-change">Presence</span>!!</h2>
 
 <div class="container-fluid px-5">
@@ -178,28 +113,34 @@
       <p class=" text-center py-4 contactus_country_P">USA</p>
     </div>
   </div>
+</div>
+<!-- Global presence Ends -->
 
-  <br>
-  <div class="container-fluid my-4 py-3">
-    <h2 class="text-center contactUs_h1 display-3 my-4  py-4">Our International <span class="color-change">Impact
-        !!</span>!!</h2>
-    <div class="row py-4 my-4">
-      <!-- Visual Elements -->
-      <div class="text-center col-md-4 col-sm-12 col-lg-4  mt-4 International_div my-4 py-4">
-        <i class="fas fa-award fa-3x color-change py-4 contactus_icons"></i>
-        <p class="mt-2 contactus_country_P">Award-winning travel services</p>
-      </div>
-      <div class="text-center col-md-4 col-sm-12 col-lg-4 mt-4 International_div my-4 py-4">
-        <i class="fas fa-comments fa-3x color-change py-4 display-6 contactus_icons"></i>
-        <p class="mt-2 contactus_country_P">Responsive customer support</p>
-      </div>
-      <div class="text-center col-md-4 col-sm-12 col-lg-4 mt-4 International_div my-4 py-4">
-        <i class="fas fa-globe fa-3x color-change py-4 contactus_icons"></i>
-        <p class="mt-2 contactus_country_P">Global presence and expertise</p>
-      </div>
+<br>
+
+
+<!-- International impact starts -->
+<div class="container-fluid my-4 py-3">
+  <h2 class="text-center contactUs_h1 display-3 my-4  py-4">Our International <span class="color-change">Impact
+      !!</span>!!</h2>
+  <div class="row py-4 my-4">
+    <!-- Visual Elements -->
+    <div class="text-center col-md-4 col-sm-12 col-lg-4  mt-4 International_div my-4 py-4">
+      <i class="fas fa-award fa-3x color-change py-4 contactus_icons"></i>
+      <p class="mt-2 contactus_country_P">Award-winning travel services</p>
+    </div>
+    <div class="text-center col-md-4 col-sm-12 col-lg-4 mt-4 International_div my-4 py-4">
+      <i class="fas fa-comments fa-3x color-change py-4 display-6 contactus_icons"></i>
+      <p class="mt-2 contactus_country_P">Responsive customer support</p>
+    </div>
+    <div class="text-center col-md-4 col-sm-12 col-lg-4 mt-4 International_div my-4 py-4">
+      <i class="fas fa-globe fa-3x color-change py-4 contactus_icons"></i>
+      <p class="mt-2 contactus_country_P">Global presence and expertise</p>
     </div>
   </div>
 </div>
+<!-- International impact Ends-->
+
 
 
 
